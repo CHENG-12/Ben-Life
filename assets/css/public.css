@@ -1,0 +1,43 @@
+/* 项目的公共样式 */
+.tonglan {
+	width: 100%;
+	min-width: 1200px;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 
+使用要求:
+ 1.使用v-middle的元素高度是有一个具体值的
+ 2.是v-middle的儿子元素想要垂直居中对齐的
+ 3.如果v-middle的儿子元素是脱离了文档流的则无效
+  
+  */
+.v-middle {
+	font-size: 0px;
+}
+
+.v-middle>* {
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.v-middle:after {
+	content: "";
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.fl{
+	float: left;
+	
+}
+.fr{
+	float: right;
+}

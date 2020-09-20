@@ -1,0 +1,23 @@
+{
+  "id": "1964558",
+  "name": "0724",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6868026",
+      "name": "下降",
+      "font_class": "xiajiang1",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "258549",
+      "name": "指数上升",
+      "font_class": "tubiao03",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

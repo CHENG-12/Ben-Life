@@ -1,0 +1,25 @@
+/* 通用复位样式 */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul{
+	list-style:none;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color:#3e4141;
+}
+.fl{
+	float:left;
+}
+.fr{
+	 float:right;
+}

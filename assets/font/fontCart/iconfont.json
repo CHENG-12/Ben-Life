@@ -1,0 +1,23 @@
+{
+  "id": "1964558",
+  "name": "0724",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12593609",
+      "name": "加号",
+      "font_class": "mui-icon-add",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13098028",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

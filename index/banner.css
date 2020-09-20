@@ -1,0 +1,110 @@
+.banner{
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/* 该轮播图的知识重点在于将ul的宽度设置的和外面的div的宽度相同,就算再往上加轮播图也不会出现轮播图被挤下去的问题 */
+ul.banner-slider{
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	white-space: nowrap;
+	transition: all 1s ease-out;
+	background-color:chartreuse;
+	transform: translateX(-100%);
+}
+ul.banner-slider li{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+ul.banner-slider li a{
+	display: block;
+	height: 100%;
+	background-position: center center;
+} 
+ul.banner-slider li:nth-child(1) a{
+	background-image: url("../images/index/lun4.jpg" );
+}
+ul.banner-slider li:nth-child(2) a{
+	background-image: url("../images/index/lun1.jpg" );
+}
+ul.banner-slider li:nth-child(3) a{
+	background-image: url("../images/index/lun2.jpg" );
+}
+ul.banner-slider li:nth-child(4) a{
+	background-image: url("../images/index/lun3.jpg" );
+}
+ul.banner-slider li:nth-child(5) a{
+	background-image: url("../images/index/lun4.jpg" );
+}
+ul.banner-slider li:nth-child(6) a{
+	background-image: url("../images/index/lun1.jpg");
+}
+ul.banner-slider li a img{
+	height: 100%;
+	
+	/* position: center; */
+}
+/* banner的指示器 */
+ul.banner-indicator{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	/* 平移自己的一半 */
+}
+ul.banner-indicator>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 17px;
+	
+}
+ul.banner-indicator>li:before{
+	content:"";
+	width: 0px;
+	height: 100%;
+	float: right;
+	background-color: #fff;
+	transition: all 1s ease-out;
+}
+ul.banner-indicator>li.active:before{
+	width: 100%;
+	float: left;
+}
+/* 前一张 */
+span.banner-prev,span.banner-next{
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+span.banner-prev{
+	left: 21%;
+	background-image: url(../images/index/左右箭头.png);
+	background-position: 17px 41px;
+	background-repeat: no-repeat;
+}
+span.banner-next{
+	right: 5%;
+	width: 50px;
+	height: 100px;
+	background-image: url(../images/index/左右箭头.png);
+	background-position: -29px 41px;
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0.4);
+}
+/* 后一张 */
+span.banner-prev:hover,
+span.banner-next:hover{
+	background-color: rgba(0,0,0,0.7);
+}
